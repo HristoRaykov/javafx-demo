@@ -16,18 +16,18 @@ public class Main extends Application {
 
 
     @Override
-    public void start(Stage primaryStage) throws Exception {
+    public void start(Stage stage) throws Exception {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("auction_gaps.fxml"));
         Parent root = loader.load();
 
         Controller controller = loader.getController();
-        controller.setStage(primaryStage);
+        controller.setStage(stage);
 
         Scene scene = new Scene(root, 300, 275);
 
-        primaryStage.setTitle("Auction Gaps");
-        primaryStage.setScene(scene);
-        primaryStage.show();
+        stage.setTitle("Auction Gaps");
+        stage.setScene(scene);
+        stage.show();
     }
 
 
