@@ -27,6 +27,9 @@ public class Main extends Application {
 
         stage.setTitle("Auction Gaps");
         stage.setScene(scene);
+//        stage.sizeToScene();
+        stage.setWidth(820);
+        stage.setHeight(750);
         stage.show();
     }
 

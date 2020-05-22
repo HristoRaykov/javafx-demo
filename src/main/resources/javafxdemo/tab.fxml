@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<!--<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="820.0" tabClosingPolicy="ALL_TABS" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">-->
+<!--    <tabs>-->
+        <Tab text="Untitled Tab 1" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+            <content>
+                <VBox prefHeight="200.0" prefWidth="564.0">
+                    <children>
+                        <StackPane prefHeight="25.0" VBox.vgrow="NEVER">
+                            <children>
+                                <Label contentDisplay="RIGHT" text="Last Update:" StackPane.alignment="CENTER_LEFT">
+                                    <graphic>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="20.05.2020" wrappingWidth="64.13671875" />
+                                    </graphic>
+                                    <StackPane.margin>
+                                        <Insets left="5.0" />
+                                    </StackPane.margin>
+                                </Label>
+                                <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="Symbols Count:" StackPane.alignment="CENTER_RIGHT">
+                                    <graphic>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="num" textAlignment="RIGHT" />
+                                    </graphic>
+                                    <StackPane.margin>
+                                        <Insets right="5.0" />
+                                    </StackPane.margin>
+                                </Label>
+                            </children>
+                        </StackPane>
+                        <TableView editable="true" tableMenuButtonVisible="true" VBox.vgrow="ALWAYS">
+                            <columns>
+                                <TableColumn editable="false" prefWidth="70.0" style="-fx-alignment: center-left; -fx-padding: 0 0 0 5;" text="SYMBOL" />
+                                <TableColumn editable="false" prefWidth="70.0" style="-fx-alignment: center-right; -fx-padding: 0 5 0 0;" text="LAST" />
+                                <TableColumn editable="false" prefWidth="70.0" style="-fx-alignment: center-right; -fx-padding: 0 5 0 0;" text="PRR_CLS" />
+                                <TableColumn editable="false" prefWidth="70.0" style="-fx-alignment: center-right; -fx-padding: 0 5 0 0;" text="CLOSE" />
+                                <TableColumn editable="false" prefWidth="70.0" style="-fx-alignment: center-right; -fx-padding: 0 5 0 0;" text="VLM" />
+                                <TableColumn editable="false" prefWidth="70.0" style="-fx-alignment: center-right; -fx-padding: 0 5 0 0;" text="AVRG_VLM" />
+                                <TableColumn editable="false" prefWidth="70.0" style="-fx-alignment: center-right; -fx-padding: 0 5 0 0;" text="IMBL" />
+                                <TableColumn editable="false" prefWidth="70.0" style="-fx-alignment: center-right; -fx-padding: 0 5 0 0;" text="IMBL%" />
+                                <TableColumn editable="false" prefWidth="70.0" style="-fx-alignment: center-right; -fx-padding: 0 5 0 0;" text="AUC_PRICE" />
+                                <TableColumn editable="false" prefWidth="70.0" style="-fx-alignment: center-right; -fx-padding: 0 5 0 0;" text="AUC_GAP" />
+                                <TableColumn editable="false" prefWidth="70.0" style="-fx-alignment: center-right; -fx-padding: 0 5 0 0;" text="AUC_GAP%" />
+                            </columns>
+                            <columnResizePolicy>
+                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                            </columnResizePolicy>
+                        </TableView>
+                    </children>
+                </VBox>
+            </content>
+        </Tab>
+<!--    </tabs>-->
+<!--</TabPane>-->

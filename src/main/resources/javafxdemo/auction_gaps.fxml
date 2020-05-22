@@ -3,25 +3,19 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 
-
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="623.0" prefWidth="363.0"
-      xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxdemo.Controller">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="750.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxdemo.Controller">
     <children>
-        <BorderPane prefHeight="50.0" prefWidth="284.0" VBox.vgrow="NEVER">
-            <center>
-                <Button maxHeight="25.0" maxWidth="52.0" minHeight="25.0" minWidth="52.0" mnemonicParsing="false"
-                        text="Load Symbols" BorderPane.alignment="CENTER" onAction="#loadSymbols"/>
-            </center>
-        </BorderPane>
-        <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="209.0"
-                    prefWidth="381.0" VBox.vgrow="ALWAYS">
+        <StackPane prefHeight="50.0" VBox.vgrow="NEVER">
             <children>
-                <TabPane layoutX="123.0" layoutY="114.0" prefHeight="200.0" prefWidth="200.0"
-                         tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
-                         AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+                <Button maxHeight="25.0" maxWidth="94.0" minHeight="25.0" minWidth="52.0" mnemonicParsing="false" onAction="#loadSymbols" prefHeight="25.0" prefWidth="94.0" text="Load Symbols" />
+            </children>
+        </StackPane>
+        <AnchorPane VBox.vgrow="ALWAYS">
+            <children>
+                <TabPane fx:id="tabPane" layoutX="123.0" layoutY="114.0" tabClosingPolicy="ALL_TABS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
             </children>
         </AnchorPane>
     </children>
