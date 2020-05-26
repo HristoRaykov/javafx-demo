@@ -1,5 +1,6 @@
 package javafxdemo;
 
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.*;
@@ -32,6 +33,7 @@ public class Controller {
         this.stage = stage;
     }
 
+    @FXML
     public void loadSymbols() throws IOException {
         FileChooser fileChooser = new FileChooser();
 
@@ -53,12 +55,12 @@ public class Controller {
         tab.setText(n);
         VBox tabContent = (VBox) tab.getContent();
 
-        StackPane info = (StackPane)tabContent.getChildren().get(0);
+        StackPane info = (StackPane) tabContent.getChildren().get(0);
         Label ch1 = (Label) info.getChildren().get(0);
         Label ch2 = (Label) info.getChildren().get(1);
 
-        Text time = (Text)ch1.getGraphic();
-        Text count = (Text)ch2.getGraphic();
+        Text time = (Text) ch1.getGraphic();
+        Text count = (Text) ch2.getGraphic();
 
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm:ss");
         LocalDateTime now = LocalDateTime.now();
@@ -80,6 +82,15 @@ public class Controller {
 
         tabPane.getTabs().add(tab);
 
+        System.out.println();
+    }
+
+    @FXML
+    public void refreshQuotes() {
+        Tab tab = tabPane.getSelectionModel().getSelectedItem();
+        VBox tabContent = (VBox) tab.getContent();
+        TableView<Stock> table = (TableView<Stock>) tabContent.getChildren().get(1);
+        ObservableList<Stock> stocks = table.getItems();
         System.out.println();
     }
 

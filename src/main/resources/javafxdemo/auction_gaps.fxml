@@ -1,16 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="750.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxdemo.Controller">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="645.0" prefWidth="472.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxdemo.Controller">
     <children>
         <StackPane prefHeight="50.0" VBox.vgrow="NEVER">
             <children>
-                <Button maxHeight="25.0" maxWidth="94.0" minHeight="25.0" minWidth="52.0" mnemonicParsing="false" onAction="#loadSymbols" prefHeight="25.0" prefWidth="94.0" text="Load Symbols" />
+                <Button mnemonicParsing="false" onAction="#loadSymbols" text="Load Symbols" StackPane.alignment="BOTTOM_LEFT">
+                    <StackPane.margin>
+                        <Insets bottom="5.0" left="5.0" />
+                    </StackPane.margin>
+                    <padding>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                    </padding>
+               <font>
+                  <Font name="System Italic" size="11.0" />
+               </font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#refreshQuotes" text="Refresh" StackPane.alignment="CENTER">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
             </children>
         </StackPane>
         <AnchorPane VBox.vgrow="ALWAYS">
